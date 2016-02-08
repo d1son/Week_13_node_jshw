@@ -1,19 +1,30 @@
+// having a lot of troube understanding express and how to use node as a web server
+
 var express = require("express");
 var bodyParser = require("body-parser");
 var app = express();
 var PORT = process.env.PORT || 8080;
 
+
+app.use("/js", express.static("public/js"));
+
+app.use("/css", express.static("public/css"));
+
+app.get("/", function(req, res) {
+  res.sendFile(process.cwd() + "/views/portfolio-new-main.html");
+});
+
 app.use(bodyParser.urlencoded({ extended: false }))
 
-app.get("/login", function(req, res) {
+app.get("/portfolio", function(req, res) {
 	res.sendFile(process.cwd() + "views/portfolio-new-main.html");
 });
 
-app.get("/help", function(req, res) {
+app.get("/rps", function(req, res) {
 	res.sendFile(process.cwd() + "views/rps-main.html");
 });
 
-app.get("/help", function(req, res) {
+app.get("/clickyGame", function(req, res) {
 	res.sendFile(process.cwd() + "views/clickyGame-home.html");;
 });
 
