@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/d1son/Week_13_node_jshw#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "body-parser": "^1.14.2",
+    "connect": "^3.4.1",
+    "express": "^4.13.4",
+    "sessions": "0.0.2"
   }
 }
