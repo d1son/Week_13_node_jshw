@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Picture Click Game</title>
+	<!-- Bootstrap css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<!-- My css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<!-- Header -->
+<header class="container-fluid">
+	<h1>How many different basketball teams can you click in 20 seconds?</h1>
+</header>
+<!-- End header container -->
+
+<!-- Main content container start -->	
+<div class="container">	
+	<div class="row">
+
+		<aside class="col-md-2">
+			<div class="panel panel-success">
+				<div class="panel-heading"><h3 class="panel-title">Countdown Timer</h3>
+				<br>
+				<p id="timeLeft">You have <br><span id="seconds">20</span><br> seconds left!</p>
+				</div>
+			</div>
+			<div class="panel panel-success">
+				<div class="panel-heading"><h3 class="panel-title">Number of clicks</h3>
+				<br>
+				<p id="clickCount">0</p>
+				</div>
+			</div>
+<!-- Start Button -->
+			<div class="container2">
+				<div class="row">
+					<div class="col-md-2 col-md-offset-3">
+						<button class="btn btn-primary btn-lg" id="startButton">Start!</button>
+					</div>
+				</div>
+			</div>
+		</aside>
+
+<!-- Images Start -->
+		<div class="col-md-10">
+
+			<div class="row">
+				<div class="col-md-11 col-md-offset-1">
+			    <img data-clickable="false" class="clickImage" src="images/Lakers.jpg">
+		    	<img data-clickable="false" class="clickImage" src="images/spurs.jpg">
+		   	 <img data-clickable="false" class="clickImage" src="images/cavs.png">
+		    	<img data-clickable="false" class="clickImage" src="images/miami.jpg">
+		    	<img data-clickable="false" class="clickImage" src="images/warriors.png">
+		    </div>
+	    </div>
+
+	    <div class="row">
+				<div class="col-md-11 col-md-offset-1">
+			    <img data-clickable="false" class="clickImage" src="images/clips.png">
+		    	<img data-clickable="false" class="clickImage" src="images/rockets.png">
+		   	 	<img data-clickable="false" class="clickImage" src="images/twolves.jpg">
+		    	<img data-clickable="false" class="clickImage" src="images/kings.jpg">
+		    	<img data-clickable="false" class="clickImage" src="images/pelicans.jpg">
+		    </div>
+	    </div>
+
+	    <div class="row">
+				<div class="col-md-11 col-md-offset-1">
+			    <img data-clickable="false" class="clickImage" src="images/okc.jpg">
+		    	<img data-clickable="false" class="clickImage" src="images/wiz.png">
+		   	 	<img data-clickable="false" class="clickImage" src="images/bulls.jpg">
+		    	<img data-clickable="false" class="clickImage" src="images/knicks.jpeg">
+		    	<img data-clickable="false" class="clickImage" src="images/dallas.png">
+		    </div>
+	    </div>
+
+	    <div class="row">
+				<div class="col-md-11 col-md-offset-1">
+			    <img data-clickable="false" class="clickImage" src="images/blazers.png">
+		    	<img data-clickable="false" class="clickImage" src="images/hawks.jpg">
+		   	 	<img data-clickable="false" class="clickImage" src="images/raptors.gif">
+		    	<img data-clickable="false" class="clickImage" src="images/celts.png">
+		    	<img data-clickable="false" class="clickImage" src="images/bucks.jpg">
+		    </div>
+	    </div>
+
+		</div>    
+	</div>
+</div>
+
+
+
+
+
+	
+
+
+	
+
+<script type="text/javascript" src="js/click.js"></script>
+
+
+</body>
+</html>

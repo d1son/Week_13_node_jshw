@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock, Paper, Scissors!</title>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/cyborg/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/html.css">
+
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="header" align="center">
+					<img src="images/rps.jpg" id="headerImg">
+				</div>
+			</div>
+		</div>
+
+		<!-- Make round counter(give the round counter a ID of roundCount) and score board here -->
+
+		<div class="row">
+			<div class="col-md-4">
+				<div class="panel panel-body">
+					<h4 id="">Your Score: <span class="userScore">0</span></h4>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="panel panel-body">
+					<h4>Round: </h4>
+					<h2><span id="roundCount">0</span></h2>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="panel panel-body">
+					<h4>Computer Score: <span class="compScore">0</span></h4>
+				</div>
+			</div>
+		</div>
+		<br>	
+		<div class="row">
+			<div class="col-md-4">
+				<div class="panel panel-body">
+					<div class="panel-body text-center">
+						<h4>Your Choice: </h4>
+						<br>
+						<h3><span id="userChoice"></span></h3>
+					</div>
+				</div>	
+			</div>
+			<div class="col-md-4">
+				<div class="panel-body text-center">
+					<i class="fa fa-hand-rock-o fa-5x" data-choice="Rock" id="rock"></i> 
+					<i class="fa fa-hand-paper-o fa-5x" data-choice="Paper" id="paper"></i>
+					<i class="fa fa-hand-scissors-o fa-5x" data-choice="Scissors" id="scissors"></i>
+				</div>
+			</div>	
+			<div class="col-md-4">
+				<div class="panel panel-body">
+					<div class="panel-body text-center">
+						<h4>Computer Choice: </h4>
+						<br>
+						<h3><span id="compChoice"></span></h3>
+					</div>
+				</div>
+			</div>		
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<h3 id="result"><span id="resultOfGame"></span></h3>
+			</div>
+		</div>
+
+		<!-- Modal Start -->
+		<div class="modal fade" id="gameEnd" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Game Over</h3>
+          </div>
+          <div class = "modal-body text-center">
+            <h3>Your Score: <span class="userScore">0</span></h3>
+            <h3>Computer Score: <span class="compScore">0</span></h3>
+            <h3>Draws: <span id="ties">0</span></h3>
+            <br>
+            <h3 id="gameEndModal"></h3>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-info" data-dismiss="modal">Try Again</a>
+          </div>
+        </div>
+      </div>
+    </div>
+	</div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+
+</body>
+</html>

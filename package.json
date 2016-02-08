@@ -1,0 +1,23 @@
+{
+  "name": "node_js_wk13",
+  "version": "1.0.0",
+  "description": "Using Node.js as a web server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d1son/Week_13_node_jshw.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d1son/Week_13_node_jshw/issues"
+  },
+  "homepage": "https://github.com/d1son/Week_13_node_jshw#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}

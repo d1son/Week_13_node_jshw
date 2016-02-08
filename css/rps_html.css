@@ -1,0 +1,17 @@
+#rock, #paper, #scissors {
+	margin: 30px;
+}
+
+h2, h3, h4 {
+	text-align: center;
+}
+
+#headerImg {
+	width: 250px;
+	height: 125px;
+
+}
+
+.header {
+	margin-bottom: 10px;
+}
